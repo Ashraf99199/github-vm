@@ -3,14 +3,14 @@ curl -s -o login.sh -L "https://raw.githubusercontent.com/JohnnyNetsec/github-vm
 #disable spotlight indexing
 sudo mdutil -i off -a
 #Create new account
-sudo dscl . -create /Users/runneradmin
-sudo dscl . -create /Users/runneradmin UserShell /bin/bash
-sudo dscl . -create /Users/runneradmin RealName Runner_Admin
-sudo dscl . -create /Users/runneradmin UniqueID 1001
-sudo dscl . -create /Users/runneradmin PrimaryGroupID 80
-sudo dscl . -create /Users/runneradmin NFSHomeDirectory /Users/tcv
-sudo dscl . -passwd /Users/runneradmin P@@ssw0rd!
-sudo dscl . -passwd /Users/runneradmin P@@ssw0rd!
+sudo dscl . -create /Users/ruunneradmin
+sudo dscl . -create /Users/ruunneradmin UserShell /bin/bash
+sudo dscl . -create /Users/ruunneradmin RealName Runner_Admin
+sudo dscl . -create /Users/ruunneradmin UniqueID 1001
+sudo dscl . -create /Users/ruunneradmin PrimaryGroupID 80
+sudo dscl . -create /Users/ruunneradmin NFSHomeDirectory /Users/tcv
+sudo dscl . -passwd /Users/ruunneradmin P@@ssw0rd!
+sudo dscl . -passwd /Users/ruunneradmin P@@ssw0rd!
 sudo createhomedir -c -u runneradmin > /dev/null
 sudo dscl . -append /Groups/admin GroupMembership runneradmin
 #Enable VNC
